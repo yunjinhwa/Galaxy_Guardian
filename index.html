@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Defender</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="page-wrap">
+    <header class="top-bar">
+      <span class="logo-dot"></span>
+      <span class="top-brand">ORBITAL OPS CENTER</span>
+      <span class="top-badge">Galaxy Defender v1.0</span>
+    </header>
+
+    <main class="layout">
+      <!-- 왼쪽 설명 / 정보 패널 -->
+      <section class="side-panel">
+        <h1 class="title">Galaxy Defender</h1>
+        <p class="subtitle">소행성 벨트를 돌파하는 최후의 요격기</p>
+
+        <div class="info-block">
+          <h2>조작법</h2>
+          <ul>
+            <li>방향키 / <span class="key">WASD</span> : 이동</li>
+            <li><span class="key">Space</span> : 공격</li>
+            <li><span class="key">Enter / Space</span> : 시작 · 재시작</li>
+          </ul>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-card">
+            <span class="label">Mode</span>
+            <span class="value">Arcade</span>
+          </div>
+          <div class="stat-card">
+            <span class="label">Status</span>
+            <span class="value status-idle">Standby</span>
+          </div>
+        </div>
+
+        <p class="mini-text">
+          먼저 <strong>게임 시작</strong> 버튼 또는 <strong>Enter / Space</strong>를 눌러<br />
+          발사 시스템을 활성화해 보세요.
+        </p>
+      </section>
+
+      <!-- 오른쪽 게임 패널 -->
+      <section class="game-panel">
+        <div class="game-frame">
+          <div class="frame-header">
+            <span class="chip">Sector 07-A</span>
+            <span class="chip chip-ghost">Asteroid Field</span>
+          </div>
+
+          <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+          <div class="game-actions">
+            <button id="startButton">게임 시작</button>
+            <button id="restartButton">다시 시작</button>
+          </div>
+        </div>
+
+        <p class="hint">
+          게임 내 상단 HUD에서 <strong>Score / Life / Time</strong>을 확인할 수 있어요.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/space_shooter(2).js"></script>
+  </body>
+</html>

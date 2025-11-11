@@ -10,7 +10,7 @@ playerImage.src = "images/fighter.png"; // 플레이어 전투기 이미지
 const first_bossImage = new Image();
 first_bossImage.src = "images/boss1.png";
 const second_bossImage = new Image();
-second_bossImage.src = "images/boss2/png";
+second_bossImage.src = "images/boss2.png";
 const third_bossImage = new Image();
 third_bossImage.src = "images/boss3.png";
 
@@ -635,4 +635,5 @@ setInterval(spawnEnemy, 1000);
 setInterval(enemyShoot, 1500); 
 
 // ▶ 게임 시작
+
 requestAnimationFrame(update);

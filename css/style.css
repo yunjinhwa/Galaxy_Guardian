@@ -20,13 +20,13 @@ body::before {
   position: fixed;
   inset: -30%;
   background:
-    radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.18), transparent 55%),
-    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.22), transparent 55%),
-    radial-gradient(circle at 60% 10%, rgba(16, 185, 129, 0.14), transparent 60%);
-  opacity: 0.8;
-  filter: blur(4px);
+    radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.16), transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.18), transparent 55%),
+    radial-gradient(circle at 60% 10%, rgba(16, 185, 129, 0.12), transparent 60%);
+  opacity: 0.7;
+  /* blur, animation 제거 */
+  filter: none;
   z-index: -1;
-  animation: bgMove 26s ease-in-out infinite alternate;
 }
 
 @keyframes bgMove {
@@ -97,10 +97,9 @@ body::before {
     radial-gradient(circle at top left, rgba(148, 163, 184, 0.35), transparent 60%),
     rgba(15, 23, 42, 0.88);
   border: 1px solid rgba(148, 163, 184, 0.7);
-  box-shadow:
-    0 0 40px rgba(15, 23, 42, 0.9),
-    0 0 32px rgba(30, 64, 175, 0.6);
-  backdrop-filter: blur(14px);
+  box-shadow: 0 0 22px rgba(15, 23, 42, 0.85);
+  /* blur 제거 */
+  backdrop-filter: none;
 }
 
 .title {
@@ -207,9 +206,9 @@ body::before {
     rgba(15, 23, 42, 0.96);
   border: 1px solid rgba(191, 219, 254, 0.8);
   box-shadow:
-    0 0 50px rgba(15, 23, 42, 1),
-    0 0 40px rgba(56, 189, 248, 0.85);
-  backdrop-filter: blur(16px);
+    0 0 26px rgba(15, 23, 42, 0.95),
+    0 0 20px rgba(56, 189, 248, 0.7);
+  backdrop-filter: none;
 }
 
 /* 프레임 상단 작은 칩들 */
